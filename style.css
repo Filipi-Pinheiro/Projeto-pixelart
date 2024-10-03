@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #212121
+}
+
+header {
+  background-color: #292929;
+  padding: 0 15px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 5px 8px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+header > h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ebebeb;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+aside {
+  width: 100%;
+  max-width: 270px;
+  min-height: calc( 100vh - 35px );
+  padding: 30px 10px 20px;
+  background-color: #2c2c2c;
+}
+
+.canvas {
+  width: 100%;
+  max-width: 270px;
+  background-color: #2c2c2c;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.row {
+  display: flex;
+  gap: 2px;
+}
+
+.pixel {
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: #444;
+  user-select: none;
+}
+
+.option-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ebebeb;
+  display: block;
+}
+
+.input-size {
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: #ebebeb;
+  padding: 8px;
+  color: #212121;
+  margin: 10px 0 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.input-color {
+  width: 43px;
+  height: 45px;
+  background: none;
+  border: none;
+  margin: 10px 0 20px;
+  cursor: pointer;
+}
+
+.input-color::-moz-color-swatch {
+  border-radius: 50px;
+  border: 2px solid #ebebeb;
+}
+
+.input-color::-webkit-color-swatch {
+  border-radius: 50px;
+  border: 2px solid #ebebeb;
+}
+
+.used-colors {
+  margin: 10px 0 20px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.button-color {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-save {
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: #ebebeb;
+  padding: 8px;
+  color: #212121;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-save:hover {
+  background-color: #d4d4d4;
+}
+
+.resize {
+  height: 270px;
+  width: 2px;
+  background-color: #444;
+  margin-top: 20px;
+  pointer: col-resize;
+}
